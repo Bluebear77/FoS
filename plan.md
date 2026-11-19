@@ -38,8 +38,8 @@ When a real-world tennis fact changes, Wikipedia prose, Wikipedia tables, and Wi
 
 | Method | Exactly what the LLM receives | Why it exists |
 |---|---|---|
-| **B1 — Target only** | [event, time] + the **1 modality** (only text, only infobox/table, only KG) at historical evaluation time `t`. | Base diagnosis without other representations. |
-| **B2 — Static cross-modal** | [event, time] + **3 modalities** (text, infobox/table, and KG) **at the same time `t`** (without duplicating the target). | Does adding the other representations' current contents improve freshness diagnosis? |
+| **B1 — Target only** | **1 modality** (only text, only infobox/table, only KG) at historical evaluation time `t`. | Base diagnosis without other representations. |
+| **B2 — Static cross-modal** | **3 modalities** (text, infobox/table, and KG) **at the same time `t`** (without duplicating the target). | Does adding the other representations' current contents improve freshness diagnosis? |
 | **B3 — Temporal ModalFugue** | B2 + earlier aligned snapshots of text/infobox/table/KG:  <br/> **T0 + T1** when evaluating T1; <br/>**T0 + T1 + T2** when evaluating T2;  <br/> **T0 + T1 + T2 + T3** when evaluating T3.  <br/> Gold labels are hidden from the model. | Does the historical evolution of the representations help? |
 
 
@@ -62,8 +62,11 @@ news:
   publisher: "ATP Tour"
   publication_date: "2023-11-08"
   url: "https://www.atptour.com/en/news/atp-500-upgrades-from-2025"
-
-extracted_facts:
+  Tripe: 
+```
+  
+```
+In true Wikidata style:
     subject: "Qatar Open (Q299402)"
     predicate: "part of (P361)"
     object: "ATP World Tour 250 series (Q300017)"
@@ -286,7 +289,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: Text
 
-**Input:** [Event, Date] from News in Triples + Text at T1 only.
+**Input:** Text at T1 only.
 
 
 ##### Text at T1
@@ -297,7 +300,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: infobox/table
 
-**Input:** [Event, Date] from News + infobox/table at T1 only.
+**Input:** infobox/table at T1 only.
 
 ##### infobox/table at T1
 
@@ -320,7 +323,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: KG
 
-**Input:** [Event, Date] from News + KG at T1 only.
+**Input:** KG at T1 only.
 
 ##### KG at T1
 
@@ -336,7 +339,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: Text
 
-**Input:** [Event, Date] from News + Text at T2 only.
+**Input:** Text at T2 only.
 
 ##### Text at T2
 
@@ -346,7 +349,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: infobox/table
 
-**Input:** [Event, Date] from News + infobox/table at T2 only.
+**Input:** infobox/table at T2 only.
 
 ##### infobox/table at T2
 
@@ -369,7 +372,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: KG
 
-**Input:** [Event, Date] from News + KG at T2 only.
+**Input:** KG at T2 only.
 
 ##### KG at T2
 
@@ -386,7 +389,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: Text
 
-**Input:** [Event, Date] from News + Text at T3 only.
+**Input:** Text at T3 only.
 
 ##### Text at T3
 
@@ -396,7 +399,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: infobox/table
 
-**Input:** [Event, Date] from News + infobox/table at T3 only.
+**Input:** infobox/table at T3 only.
 
 ##### infobox/table at T3
 
@@ -419,7 +422,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 #### B1 input — target: KG
 
-**Input:** [Event, Date] from News + KG at T3 only.
+**Input:** KG at T3 only.
 
 ##### KG at T3
 
@@ -440,7 +443,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 ### Round — Evaluate T1 using only T1
 
-**Input:** [Event, Date] from News + Text, infobox/table, KG at T1.
+**Input:** Text, infobox/table, KG at T1.
 
 #### Text at T1
 
@@ -485,7 +488,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 ### Round — Evaluate T2 using only T2
 
-**Input:** [Event, Date] from News + Text, infobox/table, KG at T2.
+**Input:** Text, infobox/table, KG at T2.
 
 #### Text at T2
 
@@ -530,7 +533,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 ### Round — Evaluate T3 using only T3
 
-**Input:** [Event, Date] from News + Text, infobox/table, KG at T3.
+**Input:** Text, infobox/table, KG at T3.
 
 #### Text at T3
 
