@@ -38,8 +38,8 @@ When a real-world tennis fact changes, Wikipedia prose, Wikipedia tables, and Wi
 
 | Method | Exactly what the LLM receives | Why it exists |
 |---|---|---|
-| **B1 — Target only** | Verified event/news + the **1 modality** (only text, only infobox/table, only KG) at historical evaluation time `t`. | Base diagnosis without other representations. |
-| **B2 — Static cross-modal** | **3 modalities** (text, infobox/table, and KG) **at the same time `t`** (without duplicating the target). | Does adding the other representations' current contents improve freshness diagnosis? |
+| **B1 — Target only** | [event, time] + the **1 modality** (only text, only infobox/table, only KG) at historical evaluation time `t`. | Base diagnosis without other representations. |
+| **B2 — Static cross-modal** | [event, time] + **3 modalities** (text, infobox/table, and KG) **at the same time `t`** (without duplicating the target). | Does adding the other representations' current contents improve freshness diagnosis? |
 | **B3 — Temporal ModalFugue** | B2 + earlier aligned snapshots of text/infobox/table/KG:  <br/> **T0 + T1** when evaluating T1; <br/>**T0 + T1 + T2** when evaluating T2;  <br/> **T0 + T1 + T2 + T3** when evaluating T3.  <br/> Gold labels are hidden from the model. | Does the historical evolution of the representations help? |
 
 
