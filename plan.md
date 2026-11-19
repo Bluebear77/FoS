@@ -4,7 +4,7 @@
 
 1. **Hypothesis:** Both 1.cross-modal and 2. its evolution history improve the detection of stale and missing knowledge across text, tables, and knowledge graphs.
 
-2. **Research Questions:** Does cross-modal information improve freshness detection? Does historical evidence, particularly the order and timing of updates, provide additional benefits? Can these predictions support reliable knowledge maintenance?
+2. **Research Questions:** Does adding the other representations' current contents improve freshness diagnosis? Does the history of other modalities help improve freshness detection beyond what we can learn from their current states and the target's own history? Can these predictions support reliable knowledge maintenance?
 
 3. **Method:** Collect historical snapshots of Wikipedia text, tables/infoboxes, and KG statements. Use verified real-world facts extracted from news to classify each modality's freshness status at different time points with freshness labels `UP_TO_DATE`, `STALE`, or `EMPTY`, and suggest the corresponding action: `KEEP`, `UPDATE`, or `ADD`.
 
@@ -18,7 +18,7 @@ When a real-world tennis fact changes, Wikipedia prose, Wikipedia tables, and Wi
 | Question | What we test |
 |---|---|
 | **RQ1 — Cross-modal complementarity** | Does adding the other representations' current contents improve freshness diagnosis? Compare **B2 vs B1**. |
-| **RQ2 — Temporal complementarity** | Does adding aligned historical observations improve diagnosis beyond current contents and the target's own history? Compare **B3 vs B2** and the focused ablations. |
+| **RQ2 — Temporal complementarity** | Does the history of other modalities help improve freshness detection beyond what we can learn from their current states and the target's own history Compare **B3 vs B2** and the focused ablations. |
 | **RQ3 — Practical maintenance** | Can the system find real stale/missing claims in Wikimedia content and produce human-reviewable edit proposals? Evaluate a live audit. |
 
 **Learn these before reading further:**
