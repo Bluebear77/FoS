@@ -77,7 +77,7 @@ The Qatar Open's announced upgrade from ATP 250 to ATP 500, effective from 2025,
 |---|---|---|
 | **Text** | 8 Nov 2023, 14:10 | [Article text says the tournament will be upgraded to ATP 500 from 2025.](https://en.wikipedia.org/w/index.php?diff=1184127272&oldid=1177910153&title=ATP_Qatar_Open) |
 | **KG** | 23 Feb 2024, 15:15 | [P361 (part of) = ATP World Tour 500 series, qualified by P580 (start time) = 2025 (year precision).](https://www.wikidata.org/w/index.php?title=Q299402&diff=prev&oldid=2084790963) |
-| **Table** | 25 Nov 2024, 20:23 | [The infobox/table updated the tournament category by adding ATP 500.](https://en.wikipedia.org/w/index.php?title=ATP_Qatar_Open&diff=prev&oldid=1259555659) |
+| **Table** | 25 Nov 2024, 20:23 | [The  updated the tournament category by adding ATP 500.](https://en.wikipedia.org/w/index.php?title=ATP_Qatar_Open&diff=prev&oldid=1259555659) |
 
 **Timeline**
 
@@ -85,7 +85,7 @@ TEXT (8 Nov 2023, 14:10) ── **107d 1h 5m** ──▶ KG (23 Feb 2024, 15:15)
 
 **Total text → table gap:** 383d 6h 13m.
 
-**Description.** At 14:10 UTC on 8 November 2023, the article’s **text** said the Qatar Open would move to ATP 500 in 2025 [e2-1](https://en.wikipedia.org/w/index.php?diff=1184127272&oldid=1177910153&title=ATP_Qatar_Open). At 15:15 UTC on 23 February 2024, the **Wikidata KG** recorded part of (`P361`) = ATP World Tour 500 series with start time (`P580`) = 2025 [e2-2](https://www.wikidata.org/w/index.php?title=Q299402&diff=prev&oldid=2084790963). On **25 November 2024 at 20:23 UTC**, the tournament’s **infobox/table** added ATP 500 alongside the historical categories [e2-3](https://en.wikipedia.org/w/index.php?title=ATP_Qatar_Open&diff=prev&oldid=1259555659). (The 19 February 2025 date belongs to a *different historical finals-table update*, not this infobox/table edit.)
+**Description.** At 14:10 UTC on 8 November 2023, the article’s **text** said the Qatar Open would move to ATP 500 in 2025 [e2-1](https://en.wikipedia.org/w/index.php?diff=1184127272&oldid=1177910153&title=ATP_Qatar_Open). At 15:15 UTC on 23 February 2024, the **Wikidata KG** recorded part of (`P361`) = ATP World Tour 500 series with start time (`P580`) = 2025 [e2-2](https://www.wikidata.org/w/index.php?title=Q299402&diff=prev&oldid=2084790963). On **25 November 2024 at 20:23 UTC**, the tournament’s **** added ATP 500 alongside the historical categories [e2-3](https://en.wikipedia.org/w/index.php?title=ATP_Qatar_Open&diff=prev&oldid=1259555659). (The 19 February 2025 date belongs to a *different historical finals-table update*, not this  edit.)
 
 
 | Observation | Text | Table | KG |
@@ -106,7 +106,7 @@ TEXT (8 Nov 2023, 14:10) ── **107d 1h 5m** ──▶ KG (23 Feb 2024, 15:15)
 The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship reasons, is a professional tennis tournament played on outdoor hard courts. It is currently part of the ATP Tour 250 series of the Association of Tennis Professionals (ATP) Tour. It is held annually in January at the Khalifa International Tennis and Squash Complex in Doha, Qatar, since 1993.
 
 
-### infobox/table at T0
+###  at T0
 
 | Field | Value |
 |---|---|
@@ -143,7 +143,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship reasons, is a professional tennis tournament played on outdoor hard courts. It is currently part of the ATP Tour 250 series of the Association of Tennis Professionals (ATP) Tour. It is held annually in January at the Khalifa International Tennis and Squash Complex in Doha, Qatar, since 1993. **From 2025, this tournament will be upgraded to an ATP 500 level event. [ATP Tour announcement, 8 November 2023](https://www.atptour.com/en/news/atp-500-upgrades-from-2025).**
 
 
-### infobox/table at T1
+###  at T1
 
 | Field | Value |
 |---|---|
@@ -179,7 +179,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship reasons, is a professional tennis tournament played on outdoor hard courts. It is currently part of the ATP Tour 250 series of the Association of Tennis Professionals (ATP) Tour. It is held annually in January at the Khalifa International Tennis and Squash Complex in Doha, Qatar, since 1993. From 2025, this tournament will be upgraded to an ATP 500 level event. [ATP Tour announcement, 8 November 2023](https://www.atptour.com/en/news/atp-500-upgrades-from-2025).
 
 
-### infobox/table at T2
+###  at T2
 
 | Field | Value |
 |---|---|
@@ -217,7 +217,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship reasons, is a professional tennis tournament played on outdoor hard courts. It is currently part of the ATP Tour 250 series of the Association of Tennis Professionals (ATP) Tour. It is held annually in January at the Khalifa International Tennis and Squash Complex in Doha, Qatar, since 1993. From 2025, this tournament will be upgraded to an ATP 500 level event. [ATP Tour announcement, 8 November 2023](https://www.atptour.com/en/news/atp-500-upgrades-from-2025).
 
 
-### infobox/table at T3
+###  at T3
 
 | Field | Value |
 |---|---|
@@ -244,7 +244,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 | Qatar Open (`Q299402`) | Part of (`P361`) | ATP World Tour 250 series (`Q300017`) | 2009 (year) | 2024 (year) |
 | Qatar Open (`Q299402`) | Part of (`P361`) | ATP World Tour 500 series (`Q300018`) | 2025 (year) | - |
 
-**Note:** `1993–20242` is an actual infobox/table typo, not a corrected historical range. Under the three-label task we assess the future ATP 500 membership claim, not the unrelated typo. **The exact KG revision contemporaneous with T3 should be rechecked** before final dataset publication; the claims above are carried forward from the last independently audited relevant P361 update.
+**Note:** `1993–20242` is an actual  typo, not a corrected historical range. Under the three-label task we assess the future ATP 500 membership claim, not the unrelated typo. 
 
 ## Output — Freshness labels
 
@@ -261,7 +261,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 ---
 
-# Experiment A — Does cross-modal evidence and history help? B1 +B2
+# Experiment A — Does cross-modal evidence help? B1 +B2
 
 # Experiment B — Does temporal evolution history help? B2 + B3
 
