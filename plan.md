@@ -268,7 +268,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 ## B1 — Target only
 
-**Input:** Verified news triples + **one target modality at the evaluation time**. The three targets are evaluated in **separate calls**; none sees the other two modalities or earlier snapshots.
+**Input:**  **one target modality at the evaluation time**. The three targets are evaluated in **separate calls**; none sees the other two modalities or earlier snapshots.
 
 **Output:** One freshness label and one suggested action **per independent target-only call**.
 
@@ -424,7 +424,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 ## B2 — Static cross-modal
 
-**Input:** Verified news triples + **one snapshot of each modality for all three modalities** at the same historical evaluation time. For each target prediction, the LLM receives that target and both other modalities, but **no earlier snapshots**.
+**Input:**  **one snapshot of each modality for all three modalities** at the same historical evaluation time. For each target prediction, the LLM receives that target and both other modalities, but **no earlier snapshots**.
 
 **Output:** Three freshness labels and suggested actions, one for each modality.
 
@@ -565,7 +565,7 @@ The Qatar Open, currently known as the Qatar ExxonMobil Open for sponsorship rea
 
 ## B3 — Temporal cross-modal
 
-**Input:** Verified news triples + **historical snapshots of each modality for all three modalities** up to the evaluation time. No later snapshots are included. In this Qatar example, **T0 is included as a pre-announcement history baseline**; it never includes the future announcement as if it were known then.
+**Input:**  **historical snapshots of each modality for all three modalities** up to the evaluation time. No later snapshots are included. In this Qatar example, **T0 is included as a pre-announcement history baseline**; it never includes the future announcement as if it were known then.
 
 - Round 1: T0 + T1 → Evaluate T1.
 - Round 2: T0 + T1 + T2 → Evaluate T2.
