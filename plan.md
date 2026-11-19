@@ -55,6 +55,7 @@ When a real-world tennis fact changes, Wikipedia prose, Wikipedia tables, and Wi
 
 
 **[Event, Time] from [News](https://www.atptour.com/en/news/atp-500-upgrades-from-2025):**
+This only serves as an anchor time point for Wikipedia edit operation extraction. Does not provide to LLM.
 
 ```
 news:
@@ -62,24 +63,10 @@ news:
   publisher: "ATP Tour"
   publication_date: "2023-11-08"
   url: "https://www.atptour.com/en/news/atp-500-upgrades-from-2025"
-  Tripe: 
-```
   
 ```
-In true Wikidata style:
-    subject: "Qatar Open (Q299402)"
-    predicate: "part of (P361)"
-    object: "ATP World Tour 250 series (Q300017)"
-    qualifiers:
-      start_time: "2009"  # P580
-      end_time: "2024"    # P582
+  
 
-    subject: "Qatar Open (Q299402)"
-    predicate: "part of (P361)"
-    object: "ATP World Tour 500 series (Q300018)"
-    qualifiers:
-      start_time: "2025"  # P580
-```
 
 
 **Wikimedia text, table and KG**
