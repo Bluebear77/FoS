@@ -33,13 +33,22 @@ When a real-world tennis fact changes, Wikipedia prose, Wikipedia tables, and Wi
 - `UP_TO_DATE`: Contains the correct fact for the requested time.
 - `STALE`: Presents a previously valid fact as if it were still current.
 - `EMPTY`: Does not contain the relevant fact.
-
 > Note: `INCORRECT`: Contains a value that is invalid for any time. (We focus on the time here, so INCORRECT is only for limitation and future work)
+
+**Question from News**:
+Extract a Question from [News Title, Time] to tell Where to check for our freshness diagnosis task. The question should include time.
+
+For example:
+- News Title: [Dallas, Doha & Munich Upgraded To ATP 500 Tournaments From 2025](https://www.atptour.com/en/news/atp-500-upgrades-from-2025)
+- News release time: November 08, 2023
+- Question: What is the ATP tournament category of the Qatar Open in 2025?
+
+
 
 | Method | Exactly what the LLM receives | Why it exists |
 |---|---|---|
-| **B1 — Target only** | **1 modality** (only text, only infobox/table, only KG) at historical evaluation time `t`. | Base diagnosis without other representations. |
-| **B2 — Static cross-modal** | **3 modalities** (text, infobox/table, and KG) **at the same time `t`** (without duplicating the target). | Does adding the other representations' current contents improve freshness diagnosis? |
+| **B1 — Target only** | Quesion + **1 modality** (only text, only infobox/table, only KG) at historical evaluation time `t`. | Base diagnosis without other representations. |
+| **B2 — Static cross-modal** | Quesion + **3 modalities** (text, infobox/table, and KG) **at the same time `t`** (without duplicating the target). | Does adding the other representations' current contents improve freshness diagnosis? |
 | **B3 — Temporal ModalFugue** | B2 + earlier aligned snapshots of text/infobox/table/KG:  <br/> **T0 + T1** when evaluating T1; <br/>**T0 + T1 + T2** when evaluating T2;  <br/> **T0 + T1 + T2 + T3** when evaluating T3.  <br/> Gold labels are hidden from the model. | Does the historical evolution of the representations help? |
 
 
